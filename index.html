@@ -1,0 +1,102 @@
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta name="description" content="Demo to Mobsyte">
+	<meta name="author" content="Ricardo Sanchez">
+
+    <title>Demo to Mobsyte by Ricardo Sanchez</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="//getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+    
+    <!-- Ricardo Style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="//getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="//getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Demo by Ricardo</h1>
+        <p class="lead">15/12/2014</p>
+      </div>
+	  
+	  
+	  <section id="demo">
+		<ol class="sortable ui-sortable">
+			<li id="list_1" class="mjs-nestedSortable-branch mjs-nestedSortable-collapsed"><div><span class="disclose"><span></span></span><div class="editable">Item 1</div></div>
+				<ol>
+					<li id="list_2" class="mjs-nestedSortable-branch mjs-nestedSortable-collapsed"><div ><span class="disclose"><span></span></span><div class="editable">Sub Item 1.1</div></div>
+					<ol> <li id="list_3" class="mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Sub Item 1.2</div></div></li>
+					</ol>
+				</li>
+				</ol>
+				</li><li id="list_4" class="mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Item 2</div></div>
+				</li><li id="list_5" class="mjs-nestedSortable-branch mjs-nestedSortable-collapsed"><div ><span class="disclose"><span></span></span><div class="editable">Item 3</div></div>
+					<ol>
+						<li id="list_6" class="mjs-nestedSortable-no-nesting mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Sub Item 3.1 (no nesting)</div></div>
+						</li><li id="list_7" class="mjs-nestedSortable-branch mjs-nestedSortable-collapsed"><div ><span class="disclose"><span></span></span><div class="editable">Sub Item 3.2</div></div>
+							<ol>
+								<li id="list_8" class="mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Sub Item 3.2.1</div></div>
+							</li></ol>
+					</li></ol>
+				</li><li id="list_9" class="mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Item 4</div></div>
+				</li><li id="list_10" class="mjs-nestedSortable-leaf"><div ><span class="disclose"><span></span></span><div class="editable">Item 5</div></div>
+			</li>
+		</ol>
+	
+		<h3>Generate XML</h3>
+	
+	
+			<button id="generate" class="btn btn-success" href="#">Generate</button>
+			<div class="result" id="result"></div>
+	
+	
+	</section> <!-- #demo -->
+
+	  	
+    </div><!-- /.container -->
+
+		
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- nestedSortable lib
+    ================================================== -->	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script><!-- Required for 'msie' function (not in 1.11.1) -->
+	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mjs.nestedSortable.js"></script>
+	
+	<!-- editinplace lib (edit live inputs)
+    ================================================== -->	
+	<script src="js/jquery.inlineedit.js"></script>
+
+	<!-- Script Ricardo Script 15/12/14 
+    ================================================== -->
+    <script type="text/javascript" src="js/demo.js"></script>
+	
+
+	</body>
+</html>
