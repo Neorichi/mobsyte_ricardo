@@ -30,7 +30,9 @@ foreach($decodeJson as $data):
 	$item->addChild('left', $data->left);
 	//Add child right
     $item->addChild('right', $data->right);
+    //Add child text (html)
+    $item->addChild('html', $data->html);
 endforeach;
 
-//Return 1 if all okey
+//Return 1 if all is okey
 echo $xml->asXML($file);

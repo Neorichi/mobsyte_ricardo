@@ -408,6 +408,7 @@
 				"parent_id": 'none',
 				"depth": sDepth,
 				"left": '1',
+				"html": 'none',
 				"right": ($(o.items, this.element).length + 1) * 2
 			});
 
@@ -444,9 +445,12 @@
 											 .match(o.expression || (/(.+)[-=_](.+)/));
 					pid = parentItem[2];
 				}
+				//Get html in item
+				var html=$(item).find('.editable').html();
 
+				
 				if (id) {
-						ret.push({"item_id": id[2], "parent_id": pid, "depth": depth, "left": left, "right": right});
+						ret.push({"item_id": id[2], "parent_id": pid, "depth": depth, "left": left, "html": html, "right": right});
 				}
 
 				left = right + 1;
